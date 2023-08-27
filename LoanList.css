@@ -1,0 +1,75 @@
+/* SCB Color Palettes */
+:root {
+    --scb-primary: #008FFF;
+    --scb-secondary: #F2C94C;
+    --scb-tertiary: #8EA604;
+    --scb-text: #333333;
+    --scb-background: #F8F8F8;
+  }
+  
+  .container {
+    margin-top: 80px; /* Space for nav bar */
+    background-color: var(--scb-background);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+  .card {
+    border: 1px solid #009fda;
+    padding: 16px;
+    margin: 16px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Box shadow */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden; /* Prevent content from overflowing */
+    transition: transform 0.3s ease-in-out; /* Add smooth transform animation */
+    background-color: #fff;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px); /* Add lift effect on hover */
+  }
+  
+  .card-content {
+    padding: 12px 16px;
+  }
+  
+  .loan-details {
+    margin-top: 12px;
+  }
+  
+  .loan-details p {
+    margin: 6px 0;
+  }
+  
+  .bold-text {
+    font-weight: bold; 
+  }
+  
+  .pending-status {
+    color: var(--scb-secondary); /* Set color for pending status */
+  }
+  
+  .approved-status {
+    color: var(--scb-tertiary); /* Set color for approved status */
+  }
+
+  
+  .rejected-status {
+    color: var(--scb-text); /* Set color for rejected status */
+  }
+  
+  .loan-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .nav-bar-placeholder {
+    height: 80px; /* Space for nav bar */
+  }
+  
